@@ -39,7 +39,7 @@ export default function Navbar() {
                   Portfolio
                 </Link>
                 <Link
-                  to=""
+                  to="/contact"
                   className={`ml-4 px-3 py-2 rounded-md text-sm font-medium text-white ${
                     location.pathname === "/contact"
                       ? "glass"
