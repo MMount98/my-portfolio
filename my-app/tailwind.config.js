@@ -6,6 +6,7 @@ module.exports = {
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(255, 255, 255)",
       },
+      visibility: ["group-hover"],
     },
   },
   plugins: [require("daisyui")],

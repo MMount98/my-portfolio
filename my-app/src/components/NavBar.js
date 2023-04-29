@@ -29,7 +29,7 @@ export default function Navbar() {
                   About Me
                 </Link>
                 <Link
-                  to=""
+                  to="/portfolio"
                   className={`ml-4 px-3 py-2 rounded-md text-sm font-medium text-white ${
                     location.pathname === "/portfolio"
                       ? "glass"
@@ -49,7 +49,7 @@ export default function Navbar() {
                   Contact Me
                 </Link>
                 <Link
-                  to=""
+                  to="/resume"
                   className={`ml-4 px-3 py-2 rounded-md text-sm font-medium text-white ${
                     location.pathname === "/resume"
                       ? "glass"
