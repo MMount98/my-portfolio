@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <motion.div
-        exit={{ opacity: 0, transition: { duration: .5 } }}
+        exit={{ opacity: 0, transition: { duration: 0.5 } }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ type: "tween", duration: 2 }}
+        transition={{ delay: 1, type: "tween", duration: 1 }}
       >
         <div className="grid grid-cols-1 place-items-center m-6">
           <div className="relative ml-5 self-start">

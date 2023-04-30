@@ -12,7 +12,7 @@ export default function AboutMe() {
       exit={{ opacity: 0 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ type: "tween", duration: 2 }}
+      transition={{ delay: 1, type: "tween", duration: 1 }}
       className="bg-white dark:bg-gray-800"
     >
       <div className="container mx-auto py-8 md:py-12 flex flex-col md:flex-row">
