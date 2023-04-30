@@ -17,13 +17,13 @@ export default function Navbar() {
             </Link>
             <div className="text-2xl m-4">Michael Mount</div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline">
+              <div className="ml-96 flex">
                 <Link
                   to="/aboutMe"
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
                     location.pathname === "/aboutMe"
-                      ? "glass"
-                      : "hover:glass hover:bg-opacity-75"
+                      ? "shadow-sm shadow-black"
+                      : "hover:shadow-sm hover:shadow-black"
                   }`}
                 >
                   About Me
@@ -32,8 +32,8 @@ export default function Navbar() {
                   to="/portfolio"
                   className={`ml-4 px-3 py-2 rounded-md text-sm font-medium  ${
                     location.pathname === "/portfolio"
-                      ? "glass"
-                      : "hover:glass hover:bg-opacity-75"
+                      ? "shadow-sm shadow-black"
+                      : "hover:shadow-sm hover:shadow-black"
                   }`}
                 >
                   Portfolio
@@ -42,8 +42,8 @@ export default function Navbar() {
                   to="/contact"
                   className={`ml-4 px-3 py-2 rounded-md text-sm font-medium  ${
                     location.pathname === "/contact"
-                      ? "glass"
-                      : "hover:glass hover:bg-opacity-75"
+                      ? "shadow-sm shadow-black"
+                      : "hover:shadow-sm hover:shadow-black"
                   }`}
                 >
                   Contact Me
@@ -52,8 +52,8 @@ export default function Navbar() {
                   to="/resume"
                   className={`ml-4 px-3 py-2 rounded-md text-sm font-medium  ${
                     location.pathname === "/resume"
-                      ? "glass"
-                      : "hover:glass hover:bg-opacity-75"
+                      ? "shadow-sm shadow-black"
+                      : "hover:shadow-sm hover:shadow-black"
                   }`}
                 >
                   Resume

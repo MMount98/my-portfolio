@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer p-4 bg-base-300 grid justify-items-center">
+    <footer className="footer p-4 bg-base-300 justify-items-center">
       <div>
         <a href="https://www.linkedin.com/in/mmount98/">
           <i class="fa-brands fa-linkedin"></i>
