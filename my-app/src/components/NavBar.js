@@ -19,9 +19,9 @@ export default function Navbar() {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline">
                 <Link
-                  to=""
+                  to="/aboutMe"
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    location.pathname === "/"
+                    location.pathname === "/aboutMe"
                       ? "glass"
                       : "hover:glass hover:bg-opacity-75"
                   }`}

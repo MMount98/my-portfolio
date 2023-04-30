@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import landingPhoto from "../images/IMG_1448.png";
 import { motion } from "framer-motion";
 
-export default function AboutMe() {
+export default function Home() {
   useEffect(() => {
-    document.title = "About Me";
+    document.title = "Michael Mount";
   }, []);
 
   return (
@@ -20,7 +20,7 @@ export default function AboutMe() {
           <div className="relative ml-5 self-start">
             {setTimeout}
             <TypeAnimation
-              className="text-5xl font-bold"
+              className="text-2xl md:text-5xl font-bold "
               sequence={[
                 "Full-Stack Web Developer",
                 2000,
@@ -40,7 +40,7 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 place-items-center m-14">
           <div className="relative">
             <img
-              className="w-96 h-96 rounded-full shadow-lg shadow-white"
+              className="w-64 h-64 md:w-96 md:h-96 rounded-full shadow-lg shadow-white"
               src={landingPhoto}
               alt="Michael Mount Headshot"
             />

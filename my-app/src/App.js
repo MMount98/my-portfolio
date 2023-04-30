@@ -6,6 +6,7 @@ import AboutMe from "./components/pages/AboutMe";
 import Portfolio from "./components/pages/Porfolio";
 import Resume from "./components/pages/Resume";
 import ContactMe from "./components/pages/ContactMe";
+import Home from "./components/pages/home";
 
 
 function App() {
@@ -14,10 +15,11 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<AboutMe />} />
+          <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<ContactMe />} />
+          <Route path="/aboutMe" element={<AboutMe />} />
         </Routes>
         <Footer />
       </Router>
