@@ -38,9 +38,10 @@ export default function ContactMe() {
     <>
       <motion.div
         className="home"
-        initial={{ opacity: 0.25 }}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        exit={{ opacity: 0, transition: { duration: 1 } }}
+        transition={{ type: "tween", duration: .5 }}
       >
         <div className="grid grid-cols-1 ">
           <div className="card w-full bg-base-100 shadow-xl p-8 ">
