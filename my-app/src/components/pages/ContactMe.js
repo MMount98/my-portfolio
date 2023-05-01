@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { Input, Textarea, Button } from "react-daisyui";
+import { Input} from "react-daisyui";
 import { motion } from "framer-motion";
 
 export default function ContactMe() {
