@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { Input} from "react-daisyui";
+import { Input } from "react-daisyui";
 import { motion } from "framer-motion";
 
 export default function ContactMe() {
@@ -51,51 +51,48 @@ export default function ContactMe() {
               <div className="rounded-full h-3 w-3 bg-lime-600 mt-3 mx-1"></div>
             </div>
             <form ref={form} onSubmit={sendEmail}>
-              <div className=" rounded-b-lg shadow bg-base-200">
+              <div className="rounded-b-lg shadow bg-base-200">
                 <div className="text-center">
                   <h2 className="text-2xl font-bold">Reach Out!</h2>
                   <p className="text-lg">Send Me a Message!</p>
                 </div>
-                <div className="place-items-center grid grid-cols-2 grid-rows-2 p-4">
-                  <div class="mt-4 grid self-start">
+                <div className="grid gap-4 p-4">
+                  <div className="mt-4">
                     <label className="block mb-2 font-bold">Your Name</label>
                     <Input
                       name="from_name"
                       type="text"
                       placeholder="Enter your name"
-                      className="h-10 w-72 text-xl pl-2 rounded shadow-xl grid self-start"
+                      className="w-full h-10 text-xl pl-2 rounded shadow-xl"
                     />
                   </div>
-                  <div className="grid self-start">
-                    <label className="mt-4 mb-2 font-bold ">Your Email</label>
+                  <div className="mt-4">
+                    <label className="block mb-2 font-bold">Your Email</label>
                     <Input
                       name="from_email"
                       type="email"
                       placeholder="Enter your email"
-                      className="h-10 w-72 text-xl pl-2 rounded shadow-xl"
+                      className="w-full h-10 text-xl pl-2 rounded shadow-xl"
                     />
                   </div>
                   <div>
-                    <div class="self-center text-center">
-                      <label className="mb-2 mt-4 block font-bold self-center">
-                        What Can I help you with?
-                      </label>
-                      <textarea
-                        name="message"
-                        placeholder="Enter your message"
-                        rows={3}
-                        className="col-span-2 self-center text-center text-xl rounded shadow-xl w-96"
-                      />
-                    </div>
+                    <label className="mb-2 block font-bold">
+                      What Can I help you with?
+                    </label>
+                    <textarea
+                      name="message"
+                      placeholder="Enter your message"
+                      rows={3}
+                      className="w-full text-xl rounded shadow-xl"
+                    />
                   </div>
-                  <div class="mt-6">
+                  <div className="mt-6">
                     {isSubmitting ? (
                       <button disabled>Loading...</button>
                     ) : (
                       <button
-                        className="btn btn-outline rounded-3xl"
+                        className="btn btn-outline rounded-3xl w-full"
                         type="submit"
-                        size="lg"
                       >
                         Send
                       </button>
